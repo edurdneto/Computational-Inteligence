@@ -1,0 +1,1 @@
+source('func.m')#y = func(10)ctl.XVmin = [-5.12 -5.12];ctl.XVmax = [ 5.12  5.12]; ## and solve it with de_min[x, obj_value, nfeval, convergence] = de_min (@func, ctl)

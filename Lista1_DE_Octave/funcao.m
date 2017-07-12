@@ -1,0 +1,1 @@
+pkg load optim;## define a simple example function f = @(x) peaks(x(1), x(2)); ## plot the function to see where the minimum might be peaks() ## first we set the region where we expect the minimum ctl.XVmin = [-3 -3]; ctl.XVmax = [ 3  3]; ## and solve it with de_min [x, obj_value, nfeval, convergence] = de_min (f, ctl)
