@@ -9,10 +9,10 @@ for i=1:numParticles
     y(i) = ackley(x(i,:),X);
 end
 
-function y = rosenbrock(x)
+%function y = rosenbrock(x)
 
 %y = (1 - x(1))^2 + 100*(x(2) - x(1)^2)^2;
-y = 20 + x(1).^2 + x(2).^2 - 10*(cos(2*pi*x(1))+cos(2*pi*x(2)));
+%y = 20 + x(1).^2 + x(2).^2 - 10*(cos(2*pi*x(1))+cos(2*pi*x(2)));
 function y = ackley(x,X)
 v = X(:,1);
 p = X(:,2);

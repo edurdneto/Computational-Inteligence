@@ -18,6 +18,7 @@ y=D(:,1);  % potencia gerada
 %%%%%%%%%%%%%%%%%%%%
 z = 0:0.1:250;
 mi_out =[];
+tic;
 for i=1:length(z),
 	aux=data_regras(z(i));
     mi_out=[mi_out; aux];
@@ -73,6 +74,7 @@ end
 %%%%%%%%%%%%
 % ETAPA 4: GRAFICO DA CURVA DE REGRESSAO
 %%%%%%%%%%%%
+t=toc
 figure; plot(x,y,'bo'); hold on; grid; % diagrama de dispersao
 xlabel('Velocidade do vento [m/s]'); 
 ylabel('Potencia gerada [kWatts]');
