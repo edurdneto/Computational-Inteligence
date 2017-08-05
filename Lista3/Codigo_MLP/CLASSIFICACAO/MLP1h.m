@@ -46,8 +46,8 @@ ptst=1-ptrn; % Porcentagem usada para teste
 % DEFINE ARQUITETURA DA REDE
 %===========================
 Ne = 200; % No. de epocas de treinamento
-Nr = 100;   % No. de rodadas de treinamento/teste
-Nh = 0;   % No. de neuronios na camada oculta
+Nr = 10;   % No. de rodadas de treinamento/teste
+Nh = 4;   % No. de neuronios na camada oculta
 No = 6;   % No. de neuronios na camada de saida
 
 eta=0.1;   % Passo de aprendizagem

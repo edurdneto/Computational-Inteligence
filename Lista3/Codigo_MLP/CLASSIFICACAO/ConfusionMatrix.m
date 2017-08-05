@@ -10,9 +10,9 @@ classes = [1 0 0 0 0 0;
             0 0 0 0 1 0;
             0 0 0 0 0 1];
         
-[~, ex] = ismember(exp(1+72*10:72*10+72,1:6), classes,'rows')    
+[~, ex] = ismember(exp(1+72*4:72*4+72,1:6), classes,'rows')    
 
-[~, ob] = ismember(obt(1+72*10:72*10+72,1:6), classes,'rows')    
+[~, ob] = ismember(obt(1+72*4:72*4+72,1:6), classes,'rows')    
 
 num_observations = length(ex);
 num_classes = size(classes,1);
